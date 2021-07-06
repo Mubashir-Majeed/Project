@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Product form</h2>
+  <form action="" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="text">Product Name:</label>
+      <input type="text" class="form-control" placeholder="Enter name" name="p_name">
+    </div>
+    <div class="form-group">
+      <label for="number">Product Price:</label>
+      <input type="number" class="form-control" placeholder="Enter price" name="p_price">
+    </div>
+     <div class="form-group">
+      <label for="p_status">Product Status:</label>
+  <select name="p_status" class="custom-select">
+    <option selected>Select Status</option>
+    <option active="volvo">Active</option>
+    <option inactive="fiat">Inactive</option>
+  </select>
+    </div>
+    <label for="file">Select picture:</label>
+      <div class="custom-file">
+    <input type="file" class="custom-file-input" id="customFile" name="picture">
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div><br><br>
+    <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck"  name="cbox[]" value="Free Repairing">
+    <label class="custom-control-label" for="customCheck">Free Repairing</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck1" name="cbox[]" value="Free Dilivery">
+    <label class="custom-control-label" for="customCheck1">Free Dilivery</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck2" name="cbox[]" value="Free Parts">
+    <label class="custom-control-label" for="customCheck2">Free Parts</label>
+  </div><br>
+    <button type="submit" class="btn btn-primary">Submit</button>    <a href='listingform.php' class='btn btn-success'>Listing Page</a>
+  </form>
+</div>
+
+</body>
+</html>
